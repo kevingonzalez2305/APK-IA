@@ -84,7 +84,9 @@
 let idChatActual = localStorage.getItem('id_chat_actual') || 'chat_' + Date.now();
 localStorage.setItem('id_chat_actual', idChatActual);
 
-const API_URL   = ' https://contempt-stainless-blemish.ngrok-free.dev';
+// URL FIJA DE NGROK — cámbiala aquí cada vez que reinicies ngrok y te dé una nueva URL
+const API_URL = "https://contempt-stainless-blemish.ngrok-free.dev";
+
 const chatBox   = document.getElementById('chat-box');
 const userInput = document.getElementById('user-input');
 const sendBtn   = document.getElementById('send-btn');
